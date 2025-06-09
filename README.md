@@ -1,7 +1,15 @@
-# Tauri + Vue 3
 
-This template should help get you started developing with Tauri + Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Authors
 
-## Recommended IDE Setup
+- [@Inal Karakhanli](https://www.github.com/nickforhuman)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+# gleamadmin
+
+GleamAdmin is a modern desktop application built with Tauri and Vue.js, designed to simplify secure remote server management. With an intuitive interface, it allows users to connect to remote servers using IP and root credentials, execute essential system commands, and monitor server status in real-time. By leveraging secure SSH connections, GleamAdmin makes server control accessible and safe for users of all levels.
+
+## screenshot
+<img src="./ui.png"/>
+
+## Demo
+
+# comming soon release
