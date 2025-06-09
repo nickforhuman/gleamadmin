@@ -1,0 +1,16 @@
+@import "./base.css";
+
+
+@theme {
+    /* // palette */
+    --color-primary: #333446;
+    --color-second: 7F8CAA;
+    --color-thirty: #B8CFCE;
+    --color-forty: #EAEFEF;
+    /* // access color  */
+    --color-danger: crimson;
+    --color-success: #6CC070;
+    /* // darl light  */
+    --color-dark: rgba(0,0,0,0.6);
+    --color-light: rgba(255,255,255,0.6)
+}
