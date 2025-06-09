@@ -5,7 +5,7 @@ import { useRoute } from "vue-router"
 import menuIcon from "./icons/menu.icon.vue"
 
 const navItems = ref([
-    {name: "PC server", link: "/add/pc"},
+    {name: "PC server", link: "/"},
     {name: "VPS", link: "/add/vps"},
     {name: "Web Host", link: "/add/hosting"},
     {name: "NASS", link: "/add/nass"},
@@ -27,8 +27,8 @@ const navOpen = () => {
             </div>
             <div class="w-full flex justify-center items-center">
                 <ul class="w-full flex flex-col justify-center items-center gap-5">
-                    <li v-for="(navItem, index) in navItems" class="text-forty hover:bg-forty hover:text-primary transition-all font-bold text-xl" :key="index">
-                        <router-link :to="navItem.link" class="w-92 p-6">
+                    <li v-for="(navItem, index) in navItems" class="w-full p-6 border-b-2 border-forty text-forty hover:bg-forty hover:text-primary transition-all font-bold text-xl" :key="index">
+                        <router-link :to="navItem.link">
                             {{ navItem.name }}
                         </router-link>
                     </li>
@@ -37,17 +37,15 @@ const navOpen = () => {
         </div>
     </div>
 </transition>
-<div class="fixed bottom-20 left-0 p-4 cursor-pointer bg-forty" @click="navOpen">
+<div class="fixed bottom-1 left-1 p-4 cursor-pointer bg-forty/70 backdrop-blur-md" @click="navOpen">
     <menuIcon class="w-6 h-6 fill-primary"/>
 </div>
 </template>
 
 
-
 <style scoped>
-/* Slide-in transition */
 .nav-enter-from {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 .nav-enter-active {
   transition: transform 0.3s ease;
@@ -63,6 +61,6 @@ const navOpen = () => {
   transition: transform 0.3s ease;
 }
 .nav-leave-to {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 </style>
