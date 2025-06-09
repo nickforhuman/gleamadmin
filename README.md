@@ -13,4 +13,7 @@ GleamAdmin is a modern desktop application built with Tauri and Vue.js, designed
 
 ## Demo
 
-# comming soon release
+
+    ### npm install
+
+    ### npm run tauri dev
